@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/6dd6843fca.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Work Day Scheduler</title>
   </head>
 
@@ -19,11 +19,13 @@
     </header>
     <main class="container">
       <!-- Timeblocks go here -->
-      <div class="row mx-auto time-block" id="time-block-9am">
-        <div class="hour" id="hour09">
-          <span class="mx-auto my-auto">09AM</span>
+
+      <!-- Timeblock for 9am-->
+      <div class="row mx-auto timeBlock" id="timeBlock-9">
+        <div class="hour" id="hour9">
+          <span class="mx-auto my-auto">9AM</span>
         </div>
-        <textarea class="text-area" id="text-area-09"></textarea>
+        <textarea class="text-area" id="text-area-9"></textarea>
         <div class="saveBtn">
           <i class="fa-regular fa-floppy-disk fa-2x mx-auto my-auto"></i>
         </div>
@@ -32,7 +34,8 @@
         </div>
       </div>
 
-      <div class="row mx-auto time-block" id="time-block-10am">
+      <!-- Timeblock for 10am-->
+      <div class="row mx-auto timeBlock" id="timeBlock-10">
         <div class="hour" id="hour10">
           <span class="mx-auto my-auto">10AM</span>
         </div>
@@ -44,12 +47,142 @@
             <i class="fa-regular fa-trash-can fa-2x mx-auto my-auto"></i>
         </div>
       </div>
+
+      <!-- Timeblock for 11am-->
+      <div class="row mx-auto timeBlock" id="timeBlock-11">
+        <div class="hour" id="hour11">
+          <span class="mx-auto my-auto">11AM</span>
+        </div>
+        <textarea class="text-area" id="text-area-11"></textarea>
+        <div class="saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x mx-auto my-auto"></i>
+        </div>
+        <div class="clearBtn">
+            <i class="fa-regular fa-trash-can fa-2x mx-auto my-auto"></i>
+        </div>
+      </div>
+
+      <!-- Timeblock for 10am-->
+      <div class="row mx-auto timeBlock" id="timeBlock-12">
+        <div class="hour" id="hour12">
+          <span class="mx-auto my-auto">12PM</span>
+        </div>
+        <textarea class="text-area" id="text-area-12"></textarea>
+        <div class="saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x mx-auto my-auto"></i>
+        </div>
+        <div class="clearBtn">
+            <i class="fa-regular fa-trash-can fa-2x mx-auto my-auto"></i>
+        </div>
+      </div>
+
+
+      <!-- Timeblock for 1pm-->
+      <div class="row mx-auto timeBlock" id="timeBlock-13">
+        <div class="hour" id="hour13">
+          <span class="mx-auto my-auto">1PM</span>
+        </div>
+        <textarea class="text-area" id="text-area-13"></textarea>
+        <div class="saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x mx-auto my-auto"></i>
+        </div>
+        <div class="clearBtn">
+            <i class="fa-regular fa-trash-can fa-2x mx-auto my-auto"></i>
+        </div>
+      </div>
+
+      <!-- Timeblock for 2pm-->
+      <div class="row mx-auto timeBlock" id="timeBlock-14">
+        <div class="hour" id="hour14">
+          <span class="mx-auto my-auto">2PM</span>
+        </div>
+        <textarea class="text-area" id="text-area-14"></textarea>
+        <div class="saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x mx-auto my-auto"></i>
+        </div>
+        <div class="clearBtn">
+            <i class="fa-regular fa-trash-can fa-2x mx-auto my-auto"></i>
+        </div>
+      </div>
+
+      <!-- Timeblock for 3pm-->
+      <div class="row mx-auto timeBlock" id="timeBlock-15">
+        <div class="hour" id="hour15">
+          <span class="mx-auto my-auto">3PM</span>
+        </div>
+        <textarea class="text-area" id="text-area-15"></textarea>
+        <div class="saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x mx-auto my-auto"></i>
+        </div>
+        <div class="clearBtn">
+            <i class="fa-regular fa-trash-can fa-2x mx-auto my-auto"></i>
+        </div>
+      </div>
+
+      <!-- Timeblock for 4pm-->
+      <div class="row mx-auto timeBlock" id="timeBlock-16">
+        <div class="hour" id="hour16">
+          <span class="mx-auto my-auto">4PM</span>
+        </div>
+        <textarea class="text-area" id="text-area-16"></textarea>
+        <div class="saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x mx-auto my-auto"></i>
+        </div>
+        <div class="clearBtn">
+            <i class="fa-regular fa-trash-can fa-2x mx-auto my-auto"></i>
+        </div>
+      </div>
+
+      <!-- Timeblock for 5pm-->
+      <div class="row mx-auto timeBlock" id="timeBlock-17">
+        <div class="hour" id="hour17">
+          <span class="mx-auto my-auto">5PM</span>
+        </div>
+        <textarea class="text-area" id="text-area-17"></textarea>
+        <div class="saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x mx-auto my-auto"></i>
+        </div>
+        <div class="clearBtn">
+            <i class="fa-regular fa-trash-can fa-2x mx-auto my-auto"></i>
+        </div>
+      </div>
+
+      //TODO: Remove this later as this is to test if the colorcode is working properly
+      <!-- Timeblock for 22pm-->
+      <div class="row mx-auto timeBlock" id="timeBlock-22">
+        <div class="hour" id="hour22">
+          <span class="mx-auto my-auto">22PM</span>
+        </div>
+        <textarea class="text-area" id="text-area-22"></textarea>
+        <div class="saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x mx-auto my-auto"></i>
+        </div>
+        <div class="clearBtn">
+            <i class="fa-regular fa-trash-can fa-2x mx-auto my-auto"></i>
+        </div>
+      </div>
+
       
+      <!-- Timeblock for 20pm-->
+      <div class="row mx-auto timeBlock" id="timeBlock-23">
+        <div class="hour" id="hour23">
+          <span class="mx-auto my-auto">23PM</span>
+        </div>
+        <textarea class="text-area" id="text-area-23"></textarea>
+        <div class="saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x mx-auto my-auto"></i>
+        </div>
+        <div class="clearBtn">
+            <i class="fa-regular fa-trash-can fa-2x mx-auto my-auto"></i>
+        </div>
+      </div>
+
+      //TODO ends
       
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="/assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
