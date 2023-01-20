@@ -13,21 +13,23 @@ $(document).ready(function () {// Instructs the browser to only load script file
   setInterval(update, 1000);
 
   function checkTime() {
-    var currentHour = moment().format("h");
+    var currentHour = moment().hour();
     $(".timeBlock").each(function () {
       var time = parseInt($(this).attr("id").split("-")[1]); //The number after the '-' character is the value assigned to time
       
-      if (currentHour === time) {
-        timeBlockEl.children("textarea").addClass("present");
-        console.log("Y");
-      } else if (currentHour > time) {
-        timeBlockEl.children("textarea").addClass("past");
+      if (time < currentHour) {
+        $(this).children("textarea").addClass("past");
+        console.log("Past");
+      } else if (time === currentHour) {
+        $(this).children("textarea").addClass("present");
         console.log("Current Hour: " + currentHour);
       } else {
-        timeBlockEl.children("textarea").addClass("future");
-        console.log("Y");
+        $(this).children("textarea").addClass("future");
+        console.log(currentHour);
       }
+      console.log(time);
     });
+    
   }
   checkTime();
 });
