@@ -25,11 +25,22 @@ $(document).ready(function () {// Instructs the browser to only load script file
         console.log("Current Hour: " + currentHour);
       } else {
         $(this).children("textarea").addClass("future");
-        console.log(currentHour);
+        console.log(time);
       }
-      console.log(time);
+      //console.log(time);
     });
     
   }
   checkTime();
+
+  //Event handlers
+  $(".saveBtn").on("click", function () {
+    var schedule = $(this).siblings(".text-area").val();
+    var time = $(this).parent().attr("id").split("-")[1];
+    localStorage.setItem(time, schedule);
+    console.log(localStorage);
+  });
+
+  // Retain items on page reload
+
 });
