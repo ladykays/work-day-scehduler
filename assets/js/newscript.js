@@ -2,7 +2,7 @@ $(document).ready(function () {// Instructs the browser to only load script file
   
   // Variable declarations
   var today = moment().format("dddd Do YYYY, hh:mm:ss A");
-  //var timeBlockEl = $(".timeBlock");
+ 
 
   // Header date and time
   $("#currentDay").text(today);
@@ -12,6 +12,7 @@ $(document).ready(function () {// Instructs the browser to only load script file
   }
   setInterval(update, 1000);
 
+  // Function to check time and assign color
   function checkTime() {
     var currentHour = moment().hour();
     $(".timeBlock").each(function () {
@@ -34,15 +35,14 @@ $(document).ready(function () {// Instructs the browser to only load script file
   checkTime();
 
   //Event handlers
+
   // Function to save schedule
   $(".saveBtn").click(function(event) {
-    //event.preventDefault();
     var schedule = $(this).siblings(".text-area").val();
     var time = $(this).parent().attr("id").split("-")[1];
     localStorage.setItem(time, schedule);
   });
     
-
  // Button function to clear text in textarea
   $(".clearBtn").on("click", function () {
     $(this).siblings(".text-area").val("");
@@ -54,6 +54,7 @@ $(document).ready(function () {// Instructs the browser to only load script file
     localStorage.clear();
   }); 
   
+
   // Retain items on page reload
   $("#timeBlock-9 .text-area").val(localStorage.getItem("9"));
   $("#timeBlock-10 .text-area").val(localStorage.getItem("10"));
@@ -66,17 +67,3 @@ $(document).ready(function () {// Instructs the browser to only load script file
   $("#timeBlock-17 .text-area").val(localStorage.getItem("17"));
 
 });
-
-
- /*  // Button function to clear local storage and clear contents
-  $(".clearBtn").click(function () {
-    $(this).siblings(".text-area").val("");
-    localStorage.removeItem();
-  }); */
-  
-
-  /* // Button function to clear local storage and clear contents
-  $(".clearBtn").click(function () {
-    $(".text-area").val("");
-    localStorage.removeItem();
-  }); */
