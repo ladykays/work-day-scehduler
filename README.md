@@ -22,7 +22,7 @@ This repository contains the source files for a simple calendar application. The
 https://ladykays.github.io/work-day-scheduler
 
 ## Screenshots
-![Screenshot](assets/images/screenshot.png)
+![Screenshot](/assets/images/screenshot.png)
 
 ## Credits
 * <a href="https://stackoverflow.com/users/3951400/e-sundin">E. Sundin</a>  
