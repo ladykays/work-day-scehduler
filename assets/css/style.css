@@ -46,6 +46,7 @@ body {
   border-left: 1px solid black;
   padding: 10px;
   width: 70%;
+  line-height: 1.2;
 }
 
 .past {
@@ -60,12 +61,12 @@ body {
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: darkblue;
 }
 .btn {
   border-radius: 0;
 }
-.saveBtn {
+.saveBtn, .clearBtn {
   width: 10%;
   height:100%;
   background-color:darkblue;
@@ -73,27 +74,13 @@ body {
   display: flex;
 }
 
- .saveBtn i:hover {
+i:hover {
   font-size: 3em;
   transition: all 0.2s ease-in-out;
   /*background-color: #ff6961; */
   color: yellow;
 } 
 
-  .clearBtn i:hover {
-  color: yellow;
-  transition: all 0.2s ease-in-out;
-  /* background-color: #ff6961; */
-  font-size: 3em;
-}
-
-.clearBtn {
-  width: 10%;
-  height:100%;
-  background-color:darkblue;
-  color: aqua;
-  display: flex;
-}
 
 .description {
   white-space: pre-wrap;
@@ -103,32 +90,34 @@ body {
   margin-bottom: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+/* Media query for small screens */
+@media screen and (max-width: 992px) {
+  .hour {
+    font-size: 14px;
+    padding: 0 0;;
+  }
+  .saveBtn, .clearBtn {
+    font-size: 12px;
+    padding: 0;
+  }
+  .saveBtn:hover, .clearBtn:hover {
+    font-size: 14;
+  } 
 }
 
-
-
-.clearBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #d51706;
-  color: white;
-  
-}*/
+@media screen and (max-width: 550px) {
+  .timeBlock {
+    flex-wrap: wrap;
+  }
+   .hour {
+    font-size: 10px;
+    padding: 0 0;
+  }
+  .saveBtn, .clearBtn {
+    font-size: 10px;
+    padding: 0;
+  }
+  .saveBtn:hover, .clearBtn:hover {
+    font-size: 6px;
+  }  
+}
