@@ -101,7 +101,7 @@ i:hover {
     padding: 0;
   }
   .saveBtn:hover, .clearBtn:hover {
-    font-size: 14;
+    font-size: 14px;
   } 
 }
 
