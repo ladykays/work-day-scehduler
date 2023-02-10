@@ -19,7 +19,7 @@ This repository contains the source files for a simple calendar application. The
 * To delete ALL saved entries in the local storage, double-click any trash button.
 
 ## Live Application
-https://ladykays.github.io/work-day-scheduler
+ https://ladykays.github.io/work-day-scehduler/
 
 ## Screenshots
 ![Screenshot](/assets/images/screenshot.png)
